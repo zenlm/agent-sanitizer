@@ -50,6 +50,11 @@ class SecurityDetector:
             # Crypto
             'eth_private_key': (re.compile(r'\b0x[a-fA-F0-9]{64}\b'), 'critical'),
             'eth_address': (re.compile(r'\b0x[a-fA-F0-9]{40}\b'), 'low'),
+            
+            # Physical addresses
+            'street_address': (re.compile(r'\d+\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Court|Ct|Way|Circle|Cir|Place|Pl)\b'), 'medium'),
+            'zip_code': (re.compile(r'\b\d{5}(?:-\d{4})?\b'), 'low'),
+            'full_address': (re.compile(r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*,\s+[A-Z]{2}\s+\d{5}(?:-\d{4})?\b'), 'medium'),
         }
         
         # Safe patterns (reduce false positives)
