@@ -260,10 +260,6 @@ BSD-3-Clause - See [LICENSE](LICENSE)
 - **Example Dataset**: https://huggingface.co/datasets/zenlm/agent-coding-dataset
 - **Issues**: https://github.com/zenlm/agent-sanitizer/issues
 
-## Acknowledgments
-
-Built by [Zen AI](https://zenlm.org) to help the community share coding datasets safely.
-
 ---
 
 **Made with ❤️ for the AI coding community**
