@@ -1,4 +1,4 @@
-# agent-sanitizer — AI Assistant Context
+# agent-sanitizer
 
 # 🧹 Agent Sanitizer
 
